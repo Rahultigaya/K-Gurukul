@@ -1,0 +1,248 @@
+.contact-section {
+  padding: 60px 20px;
+  font-family: 'outfit';
+  background: rgb(223, 219, 219);
+  transition: background 0.3s ease;
+}
+/* 
+.contact-section {
+  position:static;
+  padding: 60px 20px;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #3424e2, #9a8dff, #298ebd);
+  background-size: cover;
+  overflow: hidden;
+} */
+
+.contact-section.dark {
+  background: #121212;
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  /* horizontally center */
+  align-items: center;
+  /* vertically center (if needed) */
+  gap: 30px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  width: 40px;
+  justify-content: center;
+  background-color: #005858;
+  color: white;
+  height: 40px;
+  border-radius: 20%;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none; */
+  font-size: 32px;
+  margin-bottom: -50px;
+}
+
+.social-links a:hover {
+  color: #983434;
+}
+
+.contact-section.dark .social-links a {
+  background-color: #333;
+  color: #fff;
+}
+
+.contact-section.dark .social-links a:hover {
+  background-color: #cc6d70;
+}
+
+/* new style */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  background: linear-gradient(lightblue, black);
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.listen-relax {
+  flex: 1;
+  min-width: 300px;
+  background: linear-gradient(rgb(220, 234, 238), rgb(10, 5, 5));
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-section.dark .contact-info {
+  background: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05);
+}
+
+.info-item {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.info-item a {
+  text-decoration: none;
+  color: #005858;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+/* .info-item a:hover {
+  color: #cc6d70;
+} */
+
+.address-card {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  border-left: 4px solid #cc6d70;
+}
+
+.contact-section.dark .address-card {
+  background: #2a2a2a;
+  border-left-color: #f48f9b;
+}
+
+.address-card img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+.address-card h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-section.dark .address-card h4 {
+  color: #fff;
+}
+
+.address-card p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.contact-section.dark .address-card p {
+  color: #ccc;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-family: 'outfit';
+  font-size: 20px;
+  color: black;
+}
+
+.info-item {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.info-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.address-card {
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-section.dark .address-card {
+  background: #1e1e1e;
+}
+
+.address-card img {
+  width: 180px;
+  height: 45px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: 'outfit';
+
+}
+
+.contact-form button {
+  background-color: #005858;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0c0914;
+}
+
+.toggle-theme {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #4b2f94;
+  color: #4b2f94;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contact-section.dark .toggle-theme {
+  color: #fff;
+  border-color: #fff;
+}

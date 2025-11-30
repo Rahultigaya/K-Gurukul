@@ -1,0 +1,20 @@
+.footer {
+    background-color: #648DB3;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #648DB3;
+    margin-top: auto;
+}
+
+.footer-text {
+    color: #e5e8eb;
+    font-family: 'outfit';
+    margin: 0;
+    font-size: 16px;
+}
+
+/* .footer-text:hover {
+    color:red;
+    margin: 0;
+    font-size: 18px;
+} */

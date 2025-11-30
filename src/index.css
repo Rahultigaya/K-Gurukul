@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'outfit';
+  /* background-color:#122d7d; */
+  background: linear-gradient(135deg, #3424e2, #298ebd, #100d25);
+  /* background-image: url('/logo.png'); */
+  /* path to your image */
+  /* opacity: 0.5; */
+  color: black;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #111;
+  color: #f5f5f5;
+}
+
+/* Optional: Navbar override in dark mode */
+body.dark-mode .lux-navbar {
+  background-color: #222;
+  border-color: #333;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
