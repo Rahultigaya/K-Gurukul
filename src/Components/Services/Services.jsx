@@ -82,7 +82,7 @@ const Services = () => {
 
                                             <p className="centered">
                                                 {/* <i>{product.details}</i> */}
-                                                <i>{product.description}</i>
+                                                <i>{product.details}</i>
                                             </p>
                                         </div>
                                     </div>

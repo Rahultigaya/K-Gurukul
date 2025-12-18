@@ -32,34 +32,34 @@ const Navbar = () => {
       </div>
       <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <li>
-          <a href="#home" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+          <a href="#home" onClick={handleNavClick} style={{ color: "#e8ecc0ff" }} >
             <i className="fa fa-home" title="Home"></i>
             {isMenuOpen && <span className="nav-label"> Home</span>}
           </a>
         </li>
 
         <li>
-          <a href="#about-us" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+          <a href="#about-us" onClick={handleNavClick} style={{ color: "#e8ecc0ff" }} >
             <i className="fa fa-user" title="About Us" ></i>
             {isMenuOpen && <span className="nav-label"> About Us</span>}
           </a>
         </li>
 
         <li>
-          <a href="#product" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+          <a href="#product" onClick={handleNavClick} style={{ color: "#e8ecc0ff" }} >
             <i className="fa fa-book" title="Courses" ></i>
             {isMenuOpen && <span className="nav-label"> Courses</span>}
           </a>
         </li>
 
         <li>
-          <a href="#contact-us" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+          <a href="#contact-us" onClick={handleNavClick} style={{ color: "#e8ecc0ff" }} >
             <i className="fa fa-phone" title="Contact" ></i>
             {isMenuOpen && <span className="nav-label"> Contact</span>}
           </a>
         </li>
         <li>
-          <a href="#blog" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+          <a href="#blog" onClick={handleNavClick} style={{ color: "#e8ecc0ff" }} >
             <i className="fa fa-th-large" title="Blog" ></i>
             {isMenuOpen && <span className="nav-label"> Blog</span>}
           </a>
@@ -73,10 +73,10 @@ const Navbar = () => {
       </ul>
 
       <div className="hamburger" onClick={toggleMenu}>
-        <div className={`bar ${isMenuOpen ? 'rotate1' : ''}`} style={{ backgroundColor :"orange" }}></div>
-      <div className={`bar ${isMenuOpen ? 'fade' : ''}`} style={{ backgroundColor:"yellow" }}></div>
-      <div className={`bar ${isMenuOpen ? 'rotate2' : ''}`} style={{ backgroundColor:"green" }}></div>
-    </div>
+        <div className={`bar ${isMenuOpen ? 'rotate1' : ''}`} style={{ backgroundColor: "orange" }}></div>
+        <div className={`bar ${isMenuOpen ? 'fade' : ''}`} style={{ backgroundColor: "yellow" }}></div>
+        <div className={`bar ${isMenuOpen ? 'rotate2' : ''}`} style={{ backgroundColor: "green" }}></div>
+      </div>
     </header >
   );
 };
