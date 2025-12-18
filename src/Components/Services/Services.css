@@ -11,6 +11,129 @@
     box-sizing: border-box;
 }
 
+/* ===== STATS SECTION ===== */
+.stats-section {
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* diagonal background */
+.stats-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(208, 180, 97, 0.25),
+            rgba(0, 88, 88, 0.35));
+    transform: skewY(-4deg);
+    transform-origin: top left;
+    z-index: 0;
+}
+
+/* card */
+.stats-card {
+    /* background: white; */
+    background: linear-gradient(155deg, #6584b0, #1e5c30);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+/* individual stat */
+.stat-item {
+    text-align: center;
+    min-width: 180px;
+}
+
+.daytime {
+    color: #005858;
+}
+
+/* 24x7 */
+.support-time {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.big-24 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: #5f2929;
+    text-shadow: 0 0 12px rgba(209, 60, 60, 0.5);
+    animation: glowPulse 2.5s infinite;
+}
+
+.x7 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+/* days */
+.week-days {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.day {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: #f1f1f1;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+/* active day */
+.active-day {
+    background: #5f2929;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 88, 88, 0.6);
+    transform: scale(1.1);
+}
+
+/* label */
+.support-label {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+.stat-item h2 {
+    font-family: 'outfit';
+    font-size: 2.6rem;
+    color: #e0e0e0;
+    /* matches your red accent */
+    margin-bottom: 6px;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #f2eaea;
+    letter-spacing: 0.5px;
+}
+
+/* vertical divider */
+.divider {
+    width: 2px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -29,16 +152,6 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-}
-
-.product-carousel .carousel-img {
-    width: 100%;
-    height: auto;
-    /* ✅ auto instead of fixed height */
-    max-height: 280px;
-    /* ✅ limit height */
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
 }
 
 .product-details {
@@ -163,26 +276,28 @@
 
 .product-carousel .carousel-img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
-    border-bottom: 1px solid #eee;
+    opacity: 0.4;
 }
 
 .product-details {
     padding: 4px;
     text-align: center;
+    /* background-color: rgb(8, 31, 95); */
 }
 
 .product-details h4 {
     font-family: 'outfit';
+    color: #cc6d70;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .product-details p {
     font-size: 0.95rem;
-    color: #666;
-    min-height: 60px;
+    color: #dee41c;
+    min-height: 10px;
 }
 
 .buy-btn {
@@ -214,12 +329,6 @@
     margin-bottom: 5px;
     border-radius: 2px;
     overflow: hidden;
-}
-
-.carousel-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
 }
 
 .values-grid {
@@ -305,6 +414,98 @@
     letter-spacing: 1px;
 }
 
+/* ===== PREMIUM PRODUCT CARD ===== */
+.product-card {
+    position: relative;
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(208, 180, 97, 0.45);
+}
+
+/* background image */
+.product-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.45;
+}
+
+.centered {
+    position: absolute;   /* ✅ REQUIRED */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    width: 85%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 0.95rem;
+    backdrop-filter: blur(6px);
+}
+
+/* dark gradient overlay */
+.product-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.1));
+}
+
+/* text overlay */
+.product-overlay {
+    position: absolute;
+    bottom: 0;
+    padding: 22px;
+    z-index: 2;
+    color: #fff;
+}
+
+.product-overlay h4 {
+    font-family: 'outfit';
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+    color: #f5d37a;
+    /* gold highlight */
+}
+
+.product-overlay p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+
 @media (max-width: 768px) {
     .values-grid {
         justify-content: space-around;
@@ -320,5 +521,47 @@
     .value-card {
         width: 100%;
         /* stack vertically on very small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-card {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 30px;
+    }
+
+    .divider {
+        width: 120px;
+        height: 2px;
+    }
+
+    .stat-item h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .big-24 {
+        font-size: 3rem;
+    }
+
+    .day {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        height: 380px;
+    }
+
+    .product-overlay h4 {
+        font-size: 1.2rem;
+    }
+
+    .product-overlay p {
+        font-size: 0.85rem;
     }
 }

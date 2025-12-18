@@ -1,10 +1,46 @@
+.nav-left {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Hidden text behind logo */
+.logo-text {
+    margin-left: -40px;
+    /* hide behind logo */
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #9aa9e9;
+}
+
+/* Hover effect */
+.nav-left:hover .logo-text {
+    margin-left: 10px;
+    /* slide out */
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    background-color: #648DB3;
-    position: sticky;
+    /* background-color: #648DB3; */
+    /* position: sticky; */
     top: 0;
     cursor: pointer;
     /* hyphenate-character:inherit ; */
@@ -21,14 +57,7 @@
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 40px;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    position: relative;
+    gap: 46px;
 }
 
 /* .nav-connect button {
@@ -50,9 +79,8 @@
 }
 
 .bar {
-    height: 3px;
+    height: 2px;
     width: 100%;
-    background-color: #000;
     transition: 0.3s;
 }
 
@@ -75,7 +103,7 @@
 }
 
 .nav-menu li a:hover {
-    color: #983434;
+    color: #da0f0f;
 }
 
 @media (max-width: 768px) {
@@ -84,7 +112,8 @@
         top: 70px;
         left: 0;
         right: 0;
-        background-color: #fff;
+        /* background-color: #fff; */
+        background: #1f2937;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
@@ -191,7 +220,7 @@ body.dark-mode .theme-toggle button:hover {
     margin-bottom: 20px;
 }
 
-.navbar > * {
+.navbar>* {
     flex-shrink: 0;
 }
 

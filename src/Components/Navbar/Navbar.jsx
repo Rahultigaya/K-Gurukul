@@ -26,40 +26,41 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="nav-left">
-        <img src={LOGO} alt="K-Gurukul Logo" className="logo" />
-      </div>
+        <img src={LOGO} alt="K-Gurukul Logo" className="logo" style={{ width: "50px", height: "50px" }} />
 
+        <h1 className="logo-text">KGurukul’s</h1>
+      </div>
       <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <li>
-          <a href="#home" onClick={handleNavClick} style={{ color: "#1A2A4F" }} >
+          <a href="#home" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
             <i className="fa fa-home" title="Home"></i>
             {isMenuOpen && <span className="nav-label"> Home</span>}
           </a>
         </li>
 
         <li>
-          <a href="#about-us" onClick={handleNavClick}>
-            <i className="fa fa-user" title="About Us" style={{ color: "#1A2A4F" }} ></i>
+          <a href="#about-us" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+            <i className="fa fa-user" title="About Us" ></i>
             {isMenuOpen && <span className="nav-label"> About Us</span>}
           </a>
         </li>
 
         <li>
-          <a href="#product" onClick={handleNavClick}>
-            <i className="fa fa-book" title="Courses" style={{ color: "#1A2A4F" }} ></i>
+          <a href="#product" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+            <i className="fa fa-book" title="Courses" ></i>
             {isMenuOpen && <span className="nav-label"> Courses</span>}
           </a>
         </li>
 
         <li>
-          <a href="#contact-us" onClick={handleNavClick}>
-            <i className="fa fa-phone" title="Contact" style={{ color: "#1A2A4F" }} ></i>
+          <a href="#contact-us" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+            <i className="fa fa-phone" title="Contact" ></i>
             {isMenuOpen && <span className="nav-label"> Contact</span>}
           </a>
         </li>
         <li>
-          <a href="#blog" onClick={handleNavClick}>
-            <i className="fa fa-th-large" title="Blog" style={{ color: "#1A2A4F" }} ></i>
+          <a href="#blog" onClick={handleNavClick} style={{ color: "#2567ffff" }} >
+            <i className="fa fa-th-large" title="Blog" ></i>
             {isMenuOpen && <span className="nav-label"> Blog</span>}
           </a>
         </li>
@@ -69,15 +70,15 @@ const Navbar = () => {
             {isMenuOpen && <span className="nav-label"> Order Now</span>}
           </a>
         </li> */}
-      </ul> 
+      </ul>
 
       <div className="hamburger" onClick={toggleMenu}>
-        <div className={`bar ${isMenuOpen ? 'rotate1' : ''}`}></div>
-        <div className={`bar ${isMenuOpen ? 'fade' : ''}`}></div>
-        <div className={`bar ${isMenuOpen ? 'rotate2' : ''}`}></div>
-      </div>
-    </header>
+        <div className={`bar ${isMenuOpen ? 'rotate1' : ''}`} style={{ backgroundColor :"orange" }}></div>
+      <div className={`bar ${isMenuOpen ? 'fade' : ''}`} style={{ backgroundColor:"yellow" }}></div>
+      <div className={`bar ${isMenuOpen ? 'rotate2' : ''}`} style={{ backgroundColor:"green" }}></div>
+    </div>
+    </header >
   );
 };
 
-export default Navbar;
+export default Navbar; 

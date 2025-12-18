@@ -7,6 +7,7 @@ import About from './Components/About/About';
 import Services from './Components/Services/Services';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact';
+import ScrollToTopButton from './Components/ScrollToTopButton';
 
 const App = () => {
   return (
@@ -29,6 +30,8 @@ const App = () => {
         <Contact />
         <Footer />
       </section>
+
+      <ScrollToTopButton />
     </div>
   );
 };
