@@ -69,12 +69,13 @@
 .big-24 {
     font-size: 3.6rem;
     font-weight: 800;
-    color: #5f2929;
+    color: #c6d740;
     text-shadow: 0 0 12px rgba(209, 60, 60, 0.5);
     animation: glowPulse 2.5s infinite;
 }
 
 .x7 {
+    color: white;
     font-size: 1.4rem;
     font-weight: 600;
     padding-bottom: 8px;
@@ -99,8 +100,7 @@
 
 /* active day */
 .active-day {
-    background: #5f2929;
-    color: #fff;
+    background: #c8a4c9;
     box-shadow: 0 0 10px rgba(0, 88, 88, 0.6);
     transform: scale(1.1);
 }
@@ -288,8 +288,9 @@
 }
 
 .product-details h4 {
-    font-family: 'outfit';
-    color: #cc6d70;
+    font-family:'Courier New', Courier,'Times New Roman';
+    /* color: #cc6d70; */
+    color: #c0e342;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }

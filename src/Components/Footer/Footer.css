@@ -13,8 +13,6 @@
     font-size: 16px;
 }
 
-/* .footer-text:hover {
-    color:red;
-    margin: 0;
-    font-size: 18px;
-} */
+.footer-text:hover {
+    cursor: pointer;
+}

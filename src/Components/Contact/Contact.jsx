@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Contact.css';
-import { CONTACT_NUMBER, EMAIL, ADDRESS, LOGO, SLOGAN,WHATSAPP_NUMBER } from '../../Constant';
+import { CONTACT_NUMBER, EMAIL, ADDRESS, LOGO, SLOGAN, WHATSAPP_NUMBER } from '../../Constant';
 
 // function getRandomIndex(max) {
 //   return Math.floor(Math.random() * max);
@@ -60,21 +60,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="listen-relax">
-          <iframe
-            title="Spotify Embed: Recommendation Playlist "
-            src={`https://open.spotify.com/embed/playlist/5iLrAwUSYIaIsiYDs935cD?utm_source=generator`}   // &theme=0
-            width="100%"
-            height="100%"
-            style={{ minHeight: '360px' }}
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          />
-        </div> */}
-
-        {/* Right Form Panel */}
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <h3>Contact Form</h3>
           <input name="name" type="text" placeholder="Full Name" required />
@@ -86,13 +71,13 @@ const Contact = () => {
       </div>
 
       <div className="social-links">
-        <a href="https://www.instagram.com/inwens.in/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <i className="fa fa-instagram"></i>
         </a>
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <i className="fa fa-facebook-square"></i>
         </a>
-        <a href="https://x.com/inwens" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
           <i className="fa fa-twitter-square"></i>
         </a>
         <a href={`https://api.whatsapp.com/send?phone=91${WHATSAPP_NUMBER}&text=Hi`} target="_blank" rel="noopener noreferrer">
