@@ -79,10 +79,12 @@ const Services = () => {
                                                 alt={`${product.name}-${i}`}
                                                 className="carousel-img"
                                             />
-
                                             <p className="centered">
-                                                {/* <i>{product.details}</i> */}
-                                                <i>{product.details}</i>
+                                                <ul className="details-list">
+                                                    {product.details.split(",").map((item, i) => (
+                                                        <li key={i}>{item.trim()}</li>
+                                                    ))}
+                                                </ul>
                                             </p>
                                         </div>
                                     </div>

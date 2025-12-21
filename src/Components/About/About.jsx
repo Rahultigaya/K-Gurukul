@@ -39,7 +39,7 @@ const About = () => {
                         We also believe in maintaining a positive and comfortable environment for learning. Our classrooms are designed for small batches, better interaction, and practical-based understanding.</p> */}
                 </div>
                 <div className="about-image" data-aos="fade-left">
-                    <img src="/NEW_BANNER.png" alt="Banner" />
+                    <img src="/Morning Routine.png" alt="Banner" />
                 </div>
             </div>
         </div >

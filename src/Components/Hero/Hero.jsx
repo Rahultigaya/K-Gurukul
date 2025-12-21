@@ -11,12 +11,16 @@ const Hero = () => {
             <div className="hero-content-wrapper">
                 <div className="hero-left">
                     <img
-                        src="/ver.png"
-                        alt="Profile Photo"
+                        src="/owner.png"
+                        alt="Owner Photo"
                     />
                 </div>
 
                 <div className="hero-right">
+                    <img
+                        src="/dashboard.png"
+                        alt="Computer Photo"
+                    />
                     <h1>A New Way to Learn</h1>
                     <p>
                         KGurukul helps you enhance your skills, expand your knowledge

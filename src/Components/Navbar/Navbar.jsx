@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="nav-left">
-        <img src={LOGO} alt="K-Gurukul Logo" className="logo" style={{ width: "50px", height: "50px" }} />
+        <img src={LOGO} alt="KGurukul's Logo" className="logo" style={{ width: "50px", height: "50px" }} />
 
         <h1 className="logo-text">KGurukul’s</h1>
       </div>

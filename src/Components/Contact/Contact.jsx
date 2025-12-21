@@ -54,7 +54,7 @@ const Contact = () => {
           <div className="address-card">
             <img src={LOGO} alt="logo" />
             <div>
-              <h4>K-Gurukul</h4>
+              <h4>KGurukul's</h4>
               <p>{ADDRESS}
               </p>
             </div>

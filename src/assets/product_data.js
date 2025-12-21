@@ -2,26 +2,26 @@ const Product = [
   {
     name: "ICSE : Std-IX",
     description: "(Basic Java Programming)",
-    details: "RAHUL",
-    images: ["heels/one.png"]
+    details: "Basics of programming & logic building,Weekly tests for consistent practice,Main tests for exam preparation,Crash course before school exams,Regular doubt-solving sessions,Practical sessions with hands-on coding",
+    images: ["/java.jpg"]
   },
   {
     name: "ICSE : Std-X",
     description: "(Advanced Java Programming)",
-    details: "(Basic Java Programming)",
-    images: ["flat/cross.png"]
+    details: "Advanced Java concepts + OOP,Board-oriented problem solving,Weekly chapter-wise tests,Main tests based on board pattern,Crash course + revision sessions,Practical programming exercises",
+    images: ["/java_prog.jpg"]
   },
   {
     name: "HSC : Std-XI",
     description: "(Computer Science: CS1 + CS2)",
-    details: "(Basic Java Programming)",
-    images: ["sandal/sandal_4.png"]
+    details: "Programming basics (Python/Java as per board),Theory + practical-oriented teaching,Weekly concept tests,Mid-term & final tests,Crash course for unit + final exams,Practical file guidance & lab practice",
+    images: ["/cs1.jpg"]
   },
   {
     name: "HSC : Std-XII",
     description: "(Computer Science: CS1 + CS2)",
-    details: "(Basic Java Programming)",
-    images: ["/plastic.jpg"]
+    details: "Advanced programming + algorithms,Board-focused problem solving,Full-length board pattern tests,Crash course with revision lectures,Practical file preparation + viva training",
+    images: ["/cs2.jpg"]
   }
 ];
 

@@ -1,0 +1,101 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    position: relative;
+    z-index: 3000;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 46px;
+}
+
+.hamburger {
+    display: none;
+    /* hidden on desktop */
+}
+
+.hamburger {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.rotate1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.rotate2 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.fade {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+
+    /* SHOW hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    /* HIDE menu by default */
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #1f2937;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        display: none;
+        z-index: 2000;
+    }
+
+    /* SHOW when open */
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-label {
+        display: inline;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .nav-menu {
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

@@ -75,9 +75,9 @@
     font-size: 2.6rem;
     font-weight: 600;
     letter-spacing: 1.5px;
-    color: rgba(7, 101, 141, 0.85);
+    color: rgba(44, 155, 203, 0.85);
     /* color: linear-gradient(135deg, #3424e2, #298ebd, #100d25); */
-    margin-bottom: 55px;
+    margin-bottom: 25px;
     /* padding-bottom: 8px; */
     display: inline-block;
     text-transform: uppercase;
@@ -87,6 +87,9 @@
 .about-text p {
     line-height: 1.7;
     color: whitesmoke;
+    font-weight: 400;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 15px;
     mask-type: luminance;
 }
@@ -99,6 +102,8 @@
 .about-image img {
     width: 100%;
     border-radius: 10px;
+    /* border: 5px solid rgb(33, 141, 103); */
+    border: 3px solid rgb(227, 233, 231);
 }
 
 .cta-section {
