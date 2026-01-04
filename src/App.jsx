@@ -8,16 +8,15 @@ import Services from './Components/Services/Services';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact';
 import ScrollToTopButton from './Components/ScrollToTopButton';
+import Link from './ImageUpload';
 
 const App = () => {
   return (
     <div>
       <Navbar />
-
       <section id="home">
         <Hero />
       </section>
-
       <section id="about-us">
         <About />
       </section>

@@ -135,6 +135,92 @@
     animation: float 3s ease-in-out infinite;
 }
 
+.hero-left {
+    position: relative;
+    width: fit-content;
+}
+
+/* IMAGE */
+.student-img {
+    width: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* BADGE CONTAINER */
+.student-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    padding: 12px 16px;
+    margin-left: 100px;
+    width: 68%;
+    border-radius: 14px;
+    backdrop-filter: blur(20px);
+    transform: rotate(-6deg);
+    /* background: linear-gradient(135deg, #d0b461, #6584b0); */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: badgeFade 0.8s ease;
+}
+
+/* TEXT */
+.student-badge .rank {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'output';
+}
+
+.student-badge .name {
+    font-size: 1.1rem;
+    font-weight: 1000;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* BADGE COLORS */
+.student-badge.gold {
+    border-left: 10px solid #FFD700;
+}
+
+.student-badge.silver {
+    border-left: 10px solid #C0C0C0;
+}
+
+.student-badge.bronze {
+    border-left: 10px solid #CD7F32;
+}
+
+
+/* ANIMATION */
+@keyframes badgeFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .student-img {
+        width: 240px;
+    }
+}
+
+
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -165,6 +251,12 @@
 
     .hero-left img {
         transform: none;
+    }
+
+    .student-badge {
+        transform: none;
+        /* justify-content: center; */
+        margin-left: 45px;
     }
 
     .hero-right img {

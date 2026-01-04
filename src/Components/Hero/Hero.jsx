@@ -1,19 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Hero.css";
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { students } from '../../Constant';
 
 const Hero = () => {
+    // const images = ["/owner.png", "/java.jpg", "/ver.png"];
+    const [index, setIndex] = React.useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setIndex((prev) => (prev + 1) % students.length);
+        }, 1000);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <section className="hero">
-            {/* FIXED BACKGROUND */}
             <div className="hero-bg"></div>
-
-            {/* CONTENT */}
+            {/* <div className="students-track">
+                <div className="student-card">This Year's Top 3 Featured Below</div>
+                <div className="student-card">This Year's Top 3 Featured Below</div>
+                <div className="student-card">This Year's Top 3 Featured Below</div>
+                <div className="student-card">This Year's Top 3 Featured Below</div>
+                <div className="student-card">This Year's Top 3 Featured Below</div>
+                <div className="student-card">This Year's Top 3 Featured Below</div>
+            </div> */}
             <div className="hero-content-wrapper">
                 <div className="hero-left">
                     <img
-                        src="/owner.png"
-                        alt="Owner Photo"
+                        src={students[index].image}
+                        alt={students[index].name}
+                        className="student-img"
                     />
+
+                    <div className={`student-badge ${students[index].badge}`}>
+                        <span className="rank">{students[index].rank}</span>
+                        <span className="name">{students[index].name}</span>
+                    </div>
                 </div>
 
                 <div className="hero-right">

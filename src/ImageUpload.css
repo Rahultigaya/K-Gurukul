@@ -1,0 +1,33 @@
+.upload-page {
+    min-height: 100vh;
+    background: #111827;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-box {
+    border: 2px dashed #3aa39f;
+    padding: 40px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    background: rgba(58, 163, 159, 0.1);
+}
+
+.preview {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.preview img {
+    width: 260px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}

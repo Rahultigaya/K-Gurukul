@@ -83,6 +83,9 @@ const Contact = () => {
         <a href={`https://api.whatsapp.com/send?phone=91${WHATSAPP_NUMBER}&text=Hi`} target="_blank" rel="noopener noreferrer">
           <i className="fa fa-whatsapp"></i>
         </a>
+        {/* <a href={`https://api.whatsapp.com/send?phone=91${WHATSAPP_NUMBER}&text=Hi`} target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-google"></i>
+        </a> */}
 
       </div>
       <ToastContainer />
